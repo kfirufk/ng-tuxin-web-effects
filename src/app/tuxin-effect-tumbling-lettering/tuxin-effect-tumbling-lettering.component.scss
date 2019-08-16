@@ -1,0 +1,33 @@
+@keyframes animateForwards {
+  from { top: 0; transform: rotate(0deg); }
+  to { top: .9em; transform: rotate(-15deg); }
+}
+@keyframes animateBackwards {
+  from { top: 0; transform: rotate(0deg); }
+  to { top: 1em; transform: rotate(25deg); }
+}
+
+::ng-deep .animate {
+  span {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: max-content;
+  }
+
+  &.backwards span {
+    animation: animateBackwards 1s ease-in-out forwards;
+  }
+
+  &.forwards span {
+    animation: animateForwards 1s ease-in-out forwards;
+  }
+
+  &.mixed span:nth-child(even) {
+    animation: animateBackwards 1s ease-in-out forwards;
+  }
+
+  &.mixed span:nth-child(odd) {
+    animation: animateForwards 1s ease-in-out forwards;
+  }
+}

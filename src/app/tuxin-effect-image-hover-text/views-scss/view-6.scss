@@ -1,0 +1,49 @@
+.view-6 img {
+  transition: all 0.4s ease-in-out 0.5s;
+}
+.view-6 .mask{
+  background-color: rgba(146,96,91,0.5);
+  opacity:0;
+  transition: all 0.3s ease-in 0.4s;
+}
+.view-6 h2{
+  opacity:0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: scale(10);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.view-6 p {
+  opacity:0;
+  transform: scale(10);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+.view-6 a.info {
+  opacity:0;
+  transform: translateY(100px);
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.view-6:hover .mask {
+  opacity:1;
+  transition-delay: 0s;
+}
+.view-6:hover img {
+  transition-delay: 0s;
+}
+.view-6:hover h2 {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.1s;
+}
+.view-6:hover p {
+  opacity:1;
+  transform: scale(1);
+  transition-delay: 0.2s;
+}
+.view-6:hover a.info {
+  opacity:1;
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}

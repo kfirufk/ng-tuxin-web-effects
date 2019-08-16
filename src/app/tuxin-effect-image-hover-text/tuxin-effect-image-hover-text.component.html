@@ -1,0 +1,14 @@
+<div class="view view-{{effectNumber}}">
+  <img [alt]="title" [src]="imgUrl" />
+  <div [ngClass]="{'mask':true,'mask-1':effectNumber=='9'}">
+    <h2 *ngIf="!['2','9'].includes(effectNumber)">{{title}}</h2>
+    <p *ngIf="!['2','9'].includes(effectNumber)">{{text}}</p>
+  </div>
+  <div class="mask mask-2" *ngIf="effectNumber == '9'"></div>
+    <div class="content"  *ngIf="['2','9'].includes(effectNumber)">
+      <h2>{{title}}</h2>
+      <p>>{{text}}</p>
+      <a href="{{hrefUrl}}" class="info">{{hrefText}}</a>
+    </div>
+    <a *ngIf="!['2','9'].includes(effectNumber)" href="{{hrefUrl}}" class="info">{{hrefText}}</a>
+</div>

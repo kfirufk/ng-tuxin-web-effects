@@ -1,0 +1,4 @@
+<h1>
+<span *ngFor="let textEl of textElements; let i = index"
+      [ngStyle]="{'animation-delay':(delay+((textElements.length + i)/3)) + 's'}">{{textEl}}</span>
+</h1>
