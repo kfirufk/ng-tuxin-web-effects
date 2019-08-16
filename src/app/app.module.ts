@@ -11,6 +11,7 @@ import { TuxinEffectAnimatedWritingComponent } from './tuxin-effect-animated-wri
 import { TuxinEffectImageHoverTextComponent } from './tuxin-effect-image-hover-text/tuxin-effect-image-hover-text.component';
 import { TuxinEffectClickButtonAnimationComponent } from './tuxin-effect-click-button-animation/tuxin-effect-click-button-animation.component';
 import { TuxinEffectFlipScaleComponent } from './tuxin-effect-flip-scale/tuxin-effect-flip-scale.component';
+import { TuxinEffectImageAreaMoveZoomComponent } from './tuxin-effect-image-area-move-zoom/tuxin-effect-image-area-move-zoom.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TuxinEffectFlipScaleComponent } from './tuxin-effect-flip-scale/tuxin-e
     TuxinEffectAnimatedWritingComponent,
     TuxinEffectImageHoverTextComponent,
     TuxinEffectClickButtonAnimationComponent,
-    TuxinEffectFlipScaleComponent
+    TuxinEffectFlipScaleComponent,
+    TuxinEffectImageAreaMoveZoomComponent
   ],
   imports: [
     BrowserModule,

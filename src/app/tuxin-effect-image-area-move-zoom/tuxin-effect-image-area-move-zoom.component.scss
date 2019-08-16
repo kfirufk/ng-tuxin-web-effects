@@ -1,0 +1,35 @@
+:host {
+  overflow: hidden;
+  position: absolute;
+}
+div {
+  background-image: url('https://media.istockphoto.com/photos/healthy-family-enjoying-summer-picnic-in-the-nature-picture-id812057346');
+  border: 1px solid black;
+  background-position: 0% 0%;
+  animation : pulse 4s infinite;
+  width: inherit;
+  height: inherit;;
+}
+
+@keyframes pulse {
+  from {
+    filter: blur(0px);
+    background-position: 0% 0%;
+    transform: scale(1);
+  }
+  35% {
+    filter: blur(0px);
+    transform: scale(2.5);
+    background-position: 0% 100%;
+  }
+  55% {
+    filter: blur(8px);
+    transform: scale(1);
+    background-position: 100% 100%;
+  }
+  to {
+    filter: blur(0px);
+    transform: scale(1);
+    background-position: 0% 0%;
+  }
+}
